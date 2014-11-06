@@ -2,16 +2,14 @@
   "name": "websql-sugar",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",  
+  "main": "index.js",
   "scripts": {
     "test": "mocha -R spec"
   },
-  "dependencies": {},
-    
-   
-    "author": "Yaniv Kessler", 
-  
-  
+  "dependencies": {
+    "lodash": "^2.4.1"
+  },
+  "author": "Yaniv Kessler",
   "bugs": {
     "url": "https://github.com/kessler/websql-sugar/issues"
   },
@@ -20,6 +18,5 @@
     "url": "https://github.com/kessler/websql-sugar"
   },
   "homepage": "https://github.com/kessler/websql-sugar",
-    
   "license": "MIT"
 }
