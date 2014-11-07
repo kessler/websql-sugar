@@ -28,3 +28,9 @@ module.exports = {
     }    
 }
 ```
+
+### Why?
+
+1. who designs a properties that throws exceptions? printing objects is like walking in a mine field.
+
+2. the callbacks are not node.js style :(
