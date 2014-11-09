@@ -12,7 +12,7 @@ module.exports = {
         // the singleSelectCallback will require the user of the result to write less boilerplate code
         // and just handle the actual data
         db.newRtx().query('SELECT * FROM scan').execute(db.singleSelectCallback(cb))
-    }
+    },
 
     insertFoo: function (x, y, cb) {
         db.newTx()
