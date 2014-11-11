@@ -6,6 +6,13 @@
   "scripts": {
     "test": "mocha -R spec"
   },
+  "keywords": [
+    "sql",
+    "websql",
+    "browser",
+    "data",
+    "data access layer"
+  ],
   "dependencies": {
     "lodash": "^2.4.1"
   },
