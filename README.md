@@ -12,7 +12,7 @@ module.exports = {
         // the singleSelectCallback will require the user of the result to write less boilerplate code
         // and just handle the actual data
         db.newRtx().query('SELECT * FROM scan').execute(db.singleSelectCallback(cb))
-    }
+    },
 
     insertFoo: function (x, y, cb) {
         db.newTx()
@@ -28,3 +28,9 @@ module.exports = {
     }    
 }
 ```
+
+### Why?
+
+1. who designs a properties that throws exceptions? printing objects is like walking in a mine field.
+
+2. the callbacks are not node.js style :(
