@@ -2,6 +2,7 @@ var util = require('util')
 var _ = require('lodash')
 var Tx = require('./lib/Tx')
 var ReadonlyTx = require('./lib/ReadonlyTx')
+var QueryCommand = require('./lib/QueryCommand.js')
 
 /**
  * Creates a new websql datbase or connects to an existing one
