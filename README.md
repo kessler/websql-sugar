@@ -31,6 +31,6 @@ module.exports = {
 
 ### Why?
 
-1. who designs a properties that throws exceptions? printing objects is like walking in a mine field.
+1. who designs properties that throws exceptions? printing objects is like walking in a mine field and that is exactly what happens in a websql query result!
 
-2. the callbacks are not node.js style :(
+2. the callbacks are not in node.js convention :(
