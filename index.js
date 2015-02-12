@@ -114,7 +114,7 @@ module.exports = function(window, options) {
 	// so at some point the future I might want to improve on this
 	function singleSelectCallback(cb) {
 		return function ssc(err, queryCommands) {
-			if (err) return printAndCallback(cb, err)
+			if (err) return cb(err)
 
 			if (util.isArray(queryCommands)) {
 
@@ -142,7 +142,7 @@ module.exports = function(window, options) {
 
 	function singleValueCallback(cb) {
 		return function ssc(err, queryCommands) {
-			if (err) return printAndCallback(cb, err)
+			if (err) return cb(err)
 
 			if (util.isArray(queryCommands) && queryCommands.length >= 1 && queryCommands[0] instanceof QueryCommand) {
 
@@ -160,7 +160,7 @@ module.exports = function(window, options) {
 
 	function singleInsertCallback(cb) {
 		return function sic(err, queryCommands) {
-			if (err) return printAndCallback(cb, err)
+			if (err) return cb(err)
 
 			// websql api really sucks
 			return cb(null, queryCommands[0].result.insertId)
