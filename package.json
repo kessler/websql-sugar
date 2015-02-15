@@ -14,7 +14,7 @@
     "data access layer"
   ],
   "dependencies": {
-    "lodash": "^2.4.1"
+    "lodash": "^3.2.0"
   },
   "author": "Yaniv Kessler",
   "bugs": {
