@@ -2,7 +2,7 @@
 
 Using this to build data access layers on top of websql, e.g:
 
-```
+```javascript
 var db = require('websql-sugar')({ name: 'mydb', version: '1.1' })
 
 module.exports = {
