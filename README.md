@@ -1,6 +1,6 @@
 # websql-sugar
 
-Using this to build data access layers on top of websql, e.g:
+Use this to build data access layers on top of websql, e.g:
 
 ```javascript
 var db = require('websql-sugar')({ name: 'mydb', version: '1.1' })
@@ -29,7 +29,7 @@ module.exports = {
 }
 ```
 
-### Why?
+### What's wrong with websql api?
 
 1. who designs properties that throws exceptions? printing objects is like walking in a mine field and that is exactly what happens in a websql query result!
 
